@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GR30323WEB_Zhelobkovich.UI.props" />
+</Project>

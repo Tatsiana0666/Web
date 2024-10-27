@@ -1,0 +1,89 @@
+﻿@{
+    
+}
+<style>
+    .form-check {
+        margin-left: 200px; /* Сдвиг чек-боксов вправо */
+    }
+
+    .radio-group {
+        display: flex;
+        gap: 10px; /* Маленькое расстояние между радио-кнопками */
+        align-items: center; /* Центровка по вертикали */
+    }
+
+    .form-label {
+        display: inline-block;
+        width: 100px; /* Установка ширины для меток */
+    }
+
+    .form-control {
+        display: inline-block;
+        width: 90%; /* Автоматическая ширина для текстовых полей */
+    }
+    .form-select {
+        display: flex;
+        margin-left: 200px;
+        width: 83%;
+    }
+
+</style>
+   
+        <h1>Лабораторная работа 2</h1>
+        <h2>Список</h2>
+        <ul>
+            <li>A. элемент 0 списка</li>
+            <li>B. элемент 1 списка</li>
+            <li>C. элемент 2 списка</li>
+            <li>D. элемент 3 списка</li>
+            <li>E. элемент 4 списка</li>
+        </ul>
+
+        <hr /> <!-- Горизонтальная линия -->
+     
+        <h2>Форма</h2>
+        <form>
+            <select class="form-select " name="selDemo">
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            </select>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check1">
+                <label class="form-check-label" for="check1">
+                    Чек-бокс 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check2">
+                <label class="form-check-label" for="check2">
+                    Чек-бокс 2
+                </label>
+            </div>
+
+            <div class="radio-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio1" checked>
+                    <label class="form-check-label" for="radio1">Радио-1</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio2">
+                    <label class="form-check-label" for="radio2">Радио-2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio3">
+                    <label class="form-check-label" for="radio3">Радио-3</label>
+                </div>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="login" class="form-label">Логин:</label>
+                <input type="text" class="form-control" id="login" placeholder="Введите имя">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Пароль:</label>
+                <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    
